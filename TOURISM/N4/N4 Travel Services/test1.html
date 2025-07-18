@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test 1 – N4 Travel Services | Module 1: The Travel Industry</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f0faff;
+      color: #333;
+      padding: 2rem;
+    }
+
+    .test-container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004466;
+      margin-bottom: 2rem;
+    }
+
+    .question {
+      margin-bottom: 1.6rem;
+    }
+
+    .question h3 {
+      color: #006699;
+      margin-bottom: 0.5rem;
+    }
+
+    .options label {
+      display: block;
+      margin: 0.4rem 0;
+      cursor: pointer;
+    }
+
+    button {
+      background-color: #006699;
+      color: white;
+      padding: 0.7rem 1.4rem;
+      border: none;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 2rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #004466;
+    }
+
+    .result {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="test-container">
+    <h1>Test 1 – Module 1: The Travel Industry</h1>
+
+    <form id="testForm">
+      <div class="question">
+        <h3>1. What is a travel agency?</h3>
+        <div class="options">
+          <label><input type="radio" name="q1" value="a"> A transport company</label>
+          <label><input type="radio" name="q1" value="b"> A business that sells travel-related services</label>
+          <label><input type="radio" name="q1" value="c"> A hotel group</label>
+          <label><input type="radio" name="q1" value="d"> A tourist destination</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>2. Who are principals in the travel industry?</h3>
+        <div class="options">
+          <label><input type="radio" name="q2" value="a"> Tourists</label>
+          <label><input type="radio" name="q2" value="b"> Suppliers like airlines and hotels</label>
+          <label><input type="radio" name="q2" value="c"> Receptionists</label>
+          <label><input type="radio" name="q2" value="d"> Travel agents</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>3. What is the role of a tour operator?</h3>
+        <div class="options">
+          <label><input type="radio" name="q3" value="a"> Manages airport security</label>
+          <label><input type="radio" name="q3" value="b"> Sells travel insurance</label>
+          <label><input type="radio" name="q3" value="c"> Packages and sells holidays</label>
+          <label><input type="radio" name="q3" value="d"> Issues passports</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>4. What is an itinerary?</h3>
+        <div class="options">
+          <label><input type="radio" name="q4" value="a"> A hotel receipt</label>
+          <label><input type="radio" name="q4" value="b"> A list of tourist attractions</label>
+          <label><input type="radio" name="q4" value="c"> A detailed travel plan</label>
+          <label><input type="radio" name="q4" value="d"> A tour guide</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>5. What does IATA regulate?</h3>
+        <div class="options">
+          <label><input type="radio" name="q5" value="a"> Travel blogging</label>
+          <label><input type="radio" name="q5" value="b"> International airlines</label>
+          <label><input type="radio" name="q5" value="c"> Hotel reviews</label>
+          <label><input type="radio" name="q5" value="d"> Local taxis</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>6. What does a travel consultant do?</h3>
+        <div class="options">
+          <label><input type="radio" name="q6" value="a"> Provides medical assistance</label>
+          <label><input type="radio" name="q6" value="b"> Plans and books travel arrangements</label>
+          <label><input type="radio" name="q6" value="c"> Flies planes</label>
+          <label><input type="radio" name="q6" value="d"> Guides hiking tours</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>7. What is a travel voucher?</h3>
+        <div class="options">
+          <label><input type="radio" name="q7" value="a"> A gift card</label>
+          <label><input type="radio" name="q7" value="b"> A hotel key</label>
+          <label><input type="radio" name="q7" value="c"> A document confirming booking/payment</label>
+          <label><input type="radio" name="q7" value="d"> A travel magazine</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>8. Who are outbound tourists?</h3>
+        <div class="options">
+          <label><input type="radio" name="q8" value="a"> People entering a country</label>
+          <label><input type="radio" name="q8" value="b"> People working in tourism</label>
+          <label><input type="radio" name="q8" value="c"> People traveling abroad from their own country</label>
+          <label><input type="radio" name="q8" value="d"> Tour guides</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>9. What is GDS used for?</h3>
+        <div class="options">
+          <label><input type="radio" name="q9" value="a"> Booking systems for tourism businesses</label>
+          <label><input type="radio" name="q9" value="b"> Weather reporting</label>
+          <label><input type="radio" name="q9" value="c"> Sending marketing emails</label>
+          <label><input type="radio" name="q9" value="d"> Hotel laundry tracking</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>10. Which of the following is a travel-related service?</h3>
+        <div class="options">
+          <label><input type="radio" name="q10" value="a"> Taxi dispatching</label>
+          <label><input type="radio" name="q10" value="b"> Banking</label>
+          <label><input type="radio" name="q10" value="c"> Passport application assistance</label>
+          <label><input type="radio" name="q10" value="d"> Online shopping</label>
+        </div>
+      </div>
+
+      <button type="submit">Submit Test</button>
+    </form>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    document.getElementById("testForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const answers = {
+        q1: "b",
+        q2: "b",
+        q3: "c",
+        q4: "c",
+        q5: "b",
+        q6: "b",
+        q7: "c",
+        q8: "c",
+        q9: "a",
+        q10: "c"
+      };
+
+      let score = 0;
+      for (let i = 1; i <= 10; i++) {
+        let selected = document.querySelector(`input[name="q${i}"]:checked`);
+        if (selected && selected.value === answers[`q${i}`]) {
+          score++;
+        }
+      }
+
+      document.getElementById("result").textContent = `You scored ${score} out of 10`;
+    });
+  </script>
+</body>
+</html>
+
