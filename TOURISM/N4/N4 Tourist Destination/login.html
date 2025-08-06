@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- Primary Meta Tags -->
+<title>Login | KDC Online Study Packs</title>
+<meta name="title" content="Login | KDC Online Study Packs">
+<meta name="description" content="Secure login page for students to access premium study packs on Kay's Digital Creations.">
+<meta name="keywords" content="Login, Study Packs, KDC, TVET Colleges, N4 Modules, Online Learning, Secure Access">
+<meta name="author" content="Kay's Digital Creations">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kaysdigitalcreations.co.za/login.html">
+<meta property="og:title" content="Login | KDC Online Study Packs">
+<meta property="og:description" content="Secure login page for students to access premium study packs on Kay's Digital Creations.">
+<meta property="og:image" content="https://kaysdigitalcreations.co.za/images/login-preview.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://kaysdigitalcreations.co.za/login.html">
+<meta property="twitter:title" content="Login | KDC Online Study Packs">
+<meta property="twitter:description" content="Secure login page for students to access premium study packs on Kay's Digital Creations.">
+<meta property="twitter:image" content="https://kaysdigitalcreations.co.za/images/login-preview.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url(images/backgroud-image.jpg) no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 360px;
+      padding: 30px 25px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(25px);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .login-title {
+      margin-bottom: 16px;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .input-box {
+      position: relative;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 12px 16px 12px 40px;
+      border-radius: 50px;
+      border: 3px solid transparent;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      outline: none;
+      font-weight: 500;
+      transition: 0.25s ease;
+    }
+
+    .input-box input:focus {
+      border: 3px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .input-box input::placeholder {
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .input-box i {
+      position: absolute;
+      top: 50%;
+      left: 14px;
+      transform: translateY(-50%);
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 18px;
+      pointer-events: none; /* Prevent icon from blocking input clicks */
+    }
+
+    .remember-forgot-box {
+      display: flex;
+      width: 100%;
+      margin-top: 16px;
+      justify-content: space-between;
+      font-size: 14px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .remember-me {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .forgot-password {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .forgot-password:hover {
+      text-decoration: underline;
+    }
+
+    .login-button {
+      width: 100%;
+      margin-top: 24px;
+      padding: 12px 0;
+      background: #32CDD5;
+      border: none;
+      border-radius: 50px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      outline: transparent 3px solid;
+      transition: 0.2s ease;
+    }
+
+    .login-button:focus {
+      outline: rgba(50, 205, 213, 0.54) 3px solid;
+    }
+
+    .dont-have-an-account {
+      margin-top: 16px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .dont-have-an-account a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .dont-have-an-account a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        padding: 20px 18px;
+      }
+
+      .login-title {
+        font-size: 22px;
+      }
+
+      .login-button {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <form class="container" aria-label="Login Form" id="loginForm" autocomplete="off" novalidate>
+    <h1 class="login-title">Login</h1>
+
+    <div class="input-box">
+      <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
+      <i class="bx bxs-user"></i>
+    </div>
+
+    <div class="input-box">
+      <input type="password" id="password" name="password" placeholder="Password" aria-label="Password" required />
+      <i class="bx bxs-lock-alt"></i>
+    </div>
+
+    <div class="remember-forgot-box">
+      <label class="remember-me" for="rememberMe">
+        <input type="checkbox" id="rememberMe" name="remember-me" />
+        Remember me
+      </label>
+      <a class="forgot-password" href="forgot-password.html">Forgot password?</a>
+    </div>
+
+    <button class="login-button" type="submit">Login</button>
+
+    <p class="dont-have-an-account">
+      Don't have an account?
+      <a href="register.html">Register</a>
+    </p>
+  </form>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+
+  <script>
+    // Your Firebase config - replace with your own
+
+
+        const firebaseConfig = {
+      apiKey: "AIzaSyBdG7fZIxepwwaS-5Ao4rmL9oaKj6iYNXA",
+      authDomain: "kdc-registration.firebaseapp.com",
+      projectId: "kdc-registration",
+      storageBucket: "kdc-registration.firebasestorage.app",
+      messagingSenderId: "11324989852",
+      appId: "1:11324989852:web:8b52a610552695c6b82859",
+      measurementId: "G-6BC3T2M748"
+    };
+   
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+
+    const form = document.getElementById('loginForm');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const email = form.email.value.trim();
+      const password = form.password.value;
+
+      if (!email || !password) {
+        alert('Please enter email and password.');
+        return;
+      }
+
+      auth.signInWithEmailAndPassword(email, password)
+        .then((userCredential) => {
+          alert('✅ Login successful!');
+          // TODO: redirect user or handle session storage here
+          // e.g., window.location.href = 'dashboard.html';
+          window.location.href = 'cover.html';
+
+        })
+        .catch((error) => {
+          alert('❌ Login failed: ' + error.message);
+        });
+    });
+  </script>
+</body>
+</html>

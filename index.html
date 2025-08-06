@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Primary Meta Tags -->
+<title>KDC DIGITAL STUDY PLATFORM | BUILDING DIGITAL DREAMS</title>
+<meta name="title" content="KDC DIGITAL STUDY PLATFORM | BUILDING DIGITAL DREAMS">
+<meta name="description" content="Kay’s Digital Creations (KDC) is a digital platform offering TVET and school study packs, professional website development, and internship vacancies. Empowering students and businesses through technology.">
+<meta name="keywords" content="KDC, Kay’s Digital Creations, Study Packs, TVET Colleges, School Modules, Website Development, Internships, Digital Learning, South Africa, N4, N5, N6, NSC">
+<meta name="author" content="Kay's Digital Creations">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kaysdigitalcreations.co.za/indeed.html">
+<meta property="og:title" content="KDC DIGITAL STUDY PLATFORM | BUILDING DIGITAL DREAMS">
+<meta property="og:description" content="Explore the KDC platform for online study materials, custom websites, and career-building internship opportunities.">
+<meta property="og:image" content="https://kaysdigitalcreations.co.za/images/kdc-platform-preview.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://kaysdigitalcreations.co.za/index.html">
+<meta property="twitter:title" content="KDC DIGITAL STUDY PLATFORM | BUILDING DIGITAL DREAMS">
+<meta property="twitter:description" content="Explore the KDC platform for online study materials, custom websites, and career-building internship opportunities.">
+<meta property="twitter:image" content="https://kaysdigitalcreations.co.za/images/kdc-platform-preview.jpg">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      padding-top: 90px; /* space under fixed navbar */
+      line-height: 1.5;
+    }
+
+    html {
+  scroll-padding-top: 50px;
+  scroll-behavior: smooth;
+}
+
+
+
+header {
+  background-color: white;
+  text-align: center;
+  padding-top: 120px; /* space below fixed navbar */
+  padding-bottom: 20px;
+}
+
+header img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #002244;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo a {
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
+
+    .menu-toggle {
+      display: none;
+      cursor: pointer;
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    .nav-links li a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      position: relative;
+      white-space: nowrap;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0%;
+      height: 2px;
+      background-color: #00bfff;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #00bfff;
+    }
+
+    .nav-links li a:hover::after {
+      width: 100%;
+    }
+
+    /* Responsive nav */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        background-color: #002244;
+        transition: max-height 0.4s ease-in-out;
+      }
+
+      .nav-links.show {
+        max-height: 400px;
+      }
+
+      .nav-links li {
+        text-align: center;
+        padding: 1rem 0;
+        border-top: 1px solid #004080;
+      }
+
+      .nav-links li:first-child {
+        border-top: none;
+      }
+
+      .nav-links li a {
+        font-size: 1.2rem;
+        justify-content: center;
+      }
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    #home {
+      background: linear-gradient(to right, #005288, #0077b6);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .service,
+    .course-section {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-section .button-column {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    .collapsible {
+      background-color: #0077b6;
+      color: white;
+      cursor: pointer;
+      padding: 10px 20px;
+      border: none;
+      font-size: 1rem;
+      border-radius: 4px;
+      text-align: left;
+      width: 150px;
+    }
+
+    .collapsible:hover {
+      background-color: #005f91;
+    }
+
+    .content {
+      display: none;
+      padding: 10px 15px;
+      margin-top: 5px;
+      background-color: #f9f9f9;
+      border-left: 3px solid #0077b6;
+      width: auto;
+    }
+
+    .content ul {
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+
+    .content ul li {
+      margin: 5px 0;
+    }
+
+    .icons a {
+      margin-right: 15px;
+      color: #0077b6;
+      text-decoration: none;
+    }
+
+    .icons i {
+      margin-right: 5px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #003366;
+    }
+
+    h4 {
+      color: aqua;
+    }
+
+    ul li {
+      margin: 5px 0;
+    }
+
+    .feedback-form {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 2rem auto;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      resize: vertical;
+    }
+
+    .feedback-form button {
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .feedback-form button:hover {
+      background-color: #005f91;
+    }
+
+    footer {
+      background-color: #002244;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .search-bar {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .search-bar form {
+      display: inline-block;
+    }
+
+    .search-bar input[type='text'] {
+      width: 300px;
+      max-width: 90%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    #services:hover {
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.course-section {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.course-section:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+.service {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.service:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+/* Input and textarea default styles */
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover + Focus shadow effect */
+.feedback-form input[type="text"]:hover,
+.feedback-form input[type="email"]:hover,
+.feedback-form textarea:hover,
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="email"]:focus,
+.feedback-form textarea:focus {
+  box-shadow: 0 4px 12px rgba(0, 119, 182, 0.2);
+  border-color: #0077b6;
+  outline: none;
+}
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    section#contact {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    #contact h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .icons p {
+      margin: 10px 0;
+    }
+
+    .icons a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .icons a:hover {
+      text-decoration: underline;
+    }
+
+    .feedback-form {
+      margin-top: 30px;
+    }
+
+    .feedback-form h2 {
+      margin-bottom: 15px;
+    }
+
+    .feedback-form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .feedback-form button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .feedback-form button:hover {
+      background-color: #0056b3;
+    }
+
+    #feedbackResponse {
+      margin-top: 15px;
+      font-weight: bold;
+      color: rgb(21, 12, 102);
+    }
+
+   footer {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 1rem; /* Reduced from 1rem */
+  font-size: 0.85rem;    /* Slightly smaller text */
+  line-height: 1.4;
+  margin-top: 40px;
+}
+
+footer em {
+  display: block;
+  margin-top: 4px;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+/* Contact Section Container */
+section#contact {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section Title */
+#contact h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  color: #003366;
+  font-weight: 700;
+}
+
+/* Contact Icons */
+.icons p {
+  margin: 12px 0;
+  font-size: 1rem;
+}
+
+.icons a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.icons i {
+  margin-right: 8px;
+  color: #007bff;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+/* Feedback Form */
+#feedbackForm {
+  margin-top: 30px;
+}
+
+/* Labels */
+#feedbackForm label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 600;
+  color: #004080;
+}
+
+/* Inputs & Textarea */
+#feedbackForm input[type="text"],
+#feedbackForm input[type="email"],
+#feedbackForm textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1.8px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  resize: vertical;
+  font-family: inherit;
+}
+
+#feedbackForm input[type="text"]:focus,
+#feedbackForm input[type="email"]:focus,
+#feedbackForm textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+/* Textarea min height */
+#feedbackForm textarea {
+  min-height: 120px;
+}
+
+/* Submit Button */
+#feedbackForm button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 12px;
+  display: inline-block;
+  width: 100%;
+}
+
+#feedbackForm button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Feedback Response Message */
+#feedbackResponse {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #1a3d7c;
+  text-align: center;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  section#contact {
+    padding: 25px 15px;
+  }
+
+  #contact h1 {
+    font-size: 1.8rem;
+  }
+
+  #feedbackForm button[type="submit"] {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* wider spacing between icons */
+  padding: 15px 0;
+}
+
+.footer-icons a {
+  font-size: 32px; /* make icons bigger */
+  color: #fff; /* adjust to your footer's background */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.footer-icons a:hover {
+  color: #00bfa5; /* highlight color on hover */
+  transform: scale(1.2); /* subtle zoom effect */
+}
+
+
+  </style>
+</head>
+
+
+<body>
+  <header>
+    <img
+      src="images/logo.jpg"
+      alt="Kay's Digital Creations Logo"
+      width="180"
+      height="180"
+      loading="lazy"
+    />
+  </header>
+
+  <!-- Navigation Bar -->
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="#home"><i class="fas fa-globe-africa"></i> KDC</a>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+        <li><a href="#vacancies"><i class="fas fa-briefcase"></i> Vacancies</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</body>
+</html>
+
+
+<section id="home">
+  <h1>Welcome to Kay's Digital Creations</h1>
+
+  <p><strong>Empowering education and business through digital innovation.</strong></p>
+
+  <p>
+    At <strong>Kay’s Digital Creations (KDC)</strong>, we specialize in creating <strong>modern, user-friendly websites</strong> and smart digital solutions tailored to your goals. Whether you’re a student, startup, educator, or entrepreneur — we’re here to help you make a lasting impact online.
+  </p>
+
+  <h2>💻 What We Offer</h2>
+  
+    <li><strong>Web Design & Development</strong> – Responsive, SEO-optimized websites</li>
+    <li><strong>Branding & Logo Design</strong> – Build a visual identity that stands out</li>
+    <li><strong>Online Study Packs</strong> – Simplified, syllabus-based digital learning tools</li>
+    <li><strong>Portfolios & Landing Pages</strong> – Professional one-pagers to showcase your skills or offers</li>
+  
+
+  <h2>🌟 Why Choose KDC?</h2>
+  <p>
+    We combine <strong>creativity, functionality, and technology</strong> to bring your ideas to life. Every project is crafted with care, strategy, and a focus on results — because your success is our success.
+  </p>
+
+  <p>
+    <strong>Let’s take your digital presence to the next level — affordably and professionally.</strong>
+  </p>
+
+  <p style="margin-top: 1.5em;">
+    <em>“Empowering education through digital solutions” isn’t just a tagline — it’s our commitment to helping students, educators, and creators thrive in the digital age.</em>
+  </p>
+
+  <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">
+    Learn More About Us
+  </button>
+</section>
+
+
+
+
+ <section id="about">
+  <h1>About Us</h1>
+
+  <p>
+    <strong>Kay's Digital Creations (KDC)</strong> is a forward-thinking platform founded by <strong>Karabo Bopape</strong>, built to empower students, educators, and small businesses through innovative digital solutions.
+  </p>
+
+  <p>
+    Our mission is to make <strong>quality digital education</strong> accessible, simplified, and effective for all. We specialize in developing interactive, syllabus-aligned <strong>online study packs</strong> that include tests, quizzes, videos, and revision tools — tailored especially for the South African TVET curriculum.
+  </p>
+
+  <p>
+    But we don't stop there. At KDC, we also help individuals and small businesses bring their brands to life with <strong>modern websites, eCommerce solutions, and digital portfolios</strong> that convert and engage.
+  </p>
+
+  <p>
+    Whether you’re a student preparing for exams, a tutor looking for better tools, or a business ready to grow online — we’re here to help you succeed in the digital world.
+  </p>
+
+  <p>
+    <strong>Let’s build your digital success — with creativity, reliability, and a personal touch.</strong>
+  </p>
+</section>
+
+
+  <section id="services">
+    <h1>Our Services</h1>
+
+    <div class="search-bar">
+  <input
+    type="text"
+    name="search"
+    placeholder="Search services (e.g. university, web, tourism)"
+    oninput="filterServices(this.value)"
+  />
+</div>
+
+
+    <div class="service" id="tvet">
+      <h2><i class="fas fa-graduation-cap"></i> Online Study Packs – TVET College</h2>
+      <div class="course-section">
+        <h3><i class="fas fa-map-marked-alt"></i> Tourism Course</h3>
+        <div class="button-column">
+          <div>
+            <button class="collapsible">N4</button>
+            <div class="content">
+              <ul>
+                <li>Tourist Destinations – <a href="TOURISM/N4/N4 Tourist Destination/login.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Travel Services – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Travel Office Procedures – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            
+    
+          <div>
+            <button class="collapsible">N5</button>
+            <div class="content">
+              <ul>
+                <li>Tourist Destinations – <a href="N5touristDestinationSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Travel Services – <a href="N5travelServicesSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Travel Office Procedures – <a href="N5travelOfficeProcedures.html">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+          
+          
+          <div>
+            <button class="collapsible">N6</button>
+            <div class="content">
+              <ul>
+                <li>Tourist Destinations – <a href="N6touristDestinationSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Travel Services – <a href="N6travelServicesSample.html">Sample</a> | <a href="#">=Full Version</a></li>
+                <li>Travel Office Procedures – <a href="N6travelOfficeProceduresSample.html">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+
+
+      <div class="course-section">
+        <h3><i class="fas fa-briefcase"></i> Business Management Course</h3>
+        <div class="button-column">
+          <div>
+            <button class="collapsible">N4</button>
+            <div class="content">
+              <ul>
+                <li>Accounting – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Computer Prac – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>EBM – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                 <li>Financial Acc – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Intro Acc – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Intro CP – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                   <li>Management Comm – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            
+          
+          <div>
+            <button class="collapsible">N5</button>
+            <div class="content">
+              <ul>
+                <li> Computerised Financial System – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li> Financial Acc – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Computer Practise – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                 <li>EBM – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Labour Relation – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Sales Management – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+          
+          <div>
+            <button class="collapsible">N6</button>
+            <div class="content">
+              <ul>
+                <li>Computer Practise – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>EBM – <a href="#">Sample</a> | <a href="#">=Full Version</a></li>
+                <li>Financial Acc – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                     <li>Labour Rel – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Marketing Comm – <a href="#">Sample</a> | <a href="#">=Full Version</a></li>
+                <li>Personnel Mana – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                  <li>Sales Mana – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+<div class="course-section">
+        <h3><i class="fas fa-landmark"></i> Public Management Course</h3>
+        <div class="button-column">
+          <div>
+            <button class="collapsible">N4</button>
+            <div class="content">
+              <ul>
+                <li>Public Admin – <a href="N4touristDestinationSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>EBM – <a href="N4travelServicesSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Computer Prac – <a href="N4travelOfficeProceduresSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                   <li>Management Comm– <a href="N4travelServicesSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Public Mana – <a href="N4travelOfficeProceduresSample.html">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            
+          
+          <div>
+            <button class="collapsible">N5</button>
+            <div class="content">
+              <ul>
+                <li>Public Administration – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>EBM – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Municipal – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Public Finance – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            
+          
+          <div>
+            <button class="collapsible">N6</button>
+            <div class="content">
+              <ul>
+                <li>Public Law – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Public Finance – <a href="#">Sample</a> | <a href="#">=Full Version</a></li>
+                <li>Public Administration – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Municipal – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+<div class="course-section">
+         <h3><i class="fas fa-user-tie"></i> Management Assistant Course</h3>
+        <div class="button-column">
+          <div>
+            <button class="collapsible">N4</button>
+            <div class="content">
+              <ul>
+                <li>Comm – <a href="N4touristDestinationSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Computer Prac – <a href="N4travelServicesSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>IP – <a href="N4travelOfficeProceduresSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                   <li>Intro CP – <a href="N4touristDestinationSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Office prac – <a href="N4travelServicesSample.html">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            
+          
+          <div>
+            <button class="collapsible">N5</button>
+            <div class="content">
+              <ul>
+                <li>Comm – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Computer Prac – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>IP – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Office prac – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            
+          
+          <div>
+            <button class="collapsible">N6</button>
+            <div class="content">
+              <ul>
+                <li>Comm – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Computer Prac – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>IP – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                   <li>Legal Prac – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Office prac – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>    
+
+<div class="course-section">
+        <h3><i class="fas fa-user-tie"></i> Human Resources Course</h3>
+        <div class="button-column">
+          <div>
+            <button class="collapsible">N4</button>
+            <div class="content">
+              <ul>
+                <li>Computer prac – <a href="N4touristDestinationSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>EBM – <a href="N4travelServicesSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Management Comm – <a href="N4travelOfficeProceduresSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                  <li>Personnel Mana– <a href="N4travelOfficeProceduresSample.html">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            
+          
+          <div>
+            <button class="collapsible">N5</button>
+            <div class="content">
+              <ul>
+                <li>Computer Prac – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Labour Rel – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Personnel Mana – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Personnel Tra – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            
+          
+          <div>
+            <button class="collapsible">N6</button>
+            <div class="content">
+              <ul>
+                 <li>Computer Prac – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Labour Rel – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Personnel Mana – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Personnel Tra – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div> 
+      
+      <div class="course-section">
+        <h3><i class="fas fa-bullhorn"></i> Public Relation Course</h3>
+        <div class="button-column">
+          <div>
+            <button class="collapsible">N4</button>
+            <div class="content">
+              <ul>
+                <li>Tourist Destinations – <a href="N4touristDestinationSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Travel Services – <a href="N4travelServicesSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Travel Office Procedures – <a href="N4travelOfficeProceduresSample.html">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            
+          
+          <div>
+            <button class="collapsible">N5</button>
+            <div class="content">
+              <ul>
+                <li>Tourist Destinations – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Travel Services – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Travel Office Procedures – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            
+          
+          <div>
+            <button class="collapsible">N6</button>
+            <div class="content">
+              <ul>
+                <li>Tourist Destinations – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Travel Services – <a href="#">Sample</a> | <a href="#">=Full Version</a></li>
+                <li>Travel Office Procedures – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+
+ <div class="course-section">
+         <h3><i class="fas fa-coins"></i> Financial Management Course</h3>
+        <div class="button-column">
+          <div>
+            <button class="collapsible">N4</button>
+            <div class="content">
+              <ul>
+                <li>CFS – <a href="N4touristDestinationSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>EBM – <a href="N4travelServicesSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Financial Acc – <a href="N4travelOfficeProceduresSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Management Comm – <a href="N4travelOfficeProceduresSample.html">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            
+          
+          <div>
+            <button class="collapsible">N5</button>
+            <div class="content">
+              <ul>
+                <li>CFS – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>CMA – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>EBM – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                  <li>Financial Acc – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            
+          
+          <div>
+            <button class="collapsible">N6</button>
+            <div class="content">
+              <ul>
+                <li>CFS – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>CMA – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>EBM – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                  <li>Financial Acc – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+
+ <div class="course-section">
+  <h3><i class="fas fa-chart-line"></i> Marketing Management Course</h3>
+
+        <div class="button-column">
+          <div>
+            <button class="collapsible">N4</button>
+            <div class="content">
+              <ul>
+                <li>Computer Prac – <a href="N4touristDestinationSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>EBM – <a href="N4travelServicesSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Management Com – <a href="N4travelOfficeProceduresSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Marketing Man – <a href="N4travelOfficeProceduresSample.html">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            
+        
+          <div>
+            <button class="collapsible">N5</button>
+            <div class="content">
+              <ul>
+                <li>Computer Prac – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Labour Rel – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Marketing Mana – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Sales Mana – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            
+          
+          <div>
+            <button class="collapsible">N6</button>
+            <div class="content">
+              <ul>
+                <li>Marketing Comm – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Marketing – <a href="#">Sample</a> | <a href="#">=Full Version</a></li>
+                <li>Marketing Res – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                 <li>Sales Mana – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+            
+  <div class="course-section">
+  <h3><i class="fas fa-clipboard-list"></i> Office Administration Course</h3>
+
+        <div class="button-column">
+          <div>
+            <button class="collapsible">N4</button>
+            <div class="content">
+              <ul>
+                <li>Tourist Destinations – <a href="N4touristDestinationSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Travel Services – <a href="N4travelServicesSample.html">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Travel Office Procedures – <a href="N4travelOfficeProceduresSample.html">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            
+          
+          <div>
+            <button class="collapsible">N5</button>
+            <div class="content">
+              <ul>
+                <li>Tourist Destinations – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Travel Services – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Travel Office Procedures – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            
+        
+          <div>
+            <button class="collapsible">N6</button>
+            <div class="content">
+              <ul>
+                <li>Tourist Destinations – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+                <li>Travel Services – <a href="#">Sample</a> | <a href="#">=Full Version</a></li>
+                <li>Travel Office Procedures – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    </div>
+           
+
+
+
+
+
+<div class="service" id="school">
+  <h2><i class="fas fa-school"></i> Primary & High School Study Packs</h2>
+
+  <!-- Grade 4-9 Section -->
+  <button class="collapsible">Grade 4-9</button>
+  <div class="content">
+    <ul>
+      <li>Tourist Destinations – <a href="N4touristDestinationSample.html">Sample</a> | <a href="#">Full Version</a></li>
+      <li>Travel Services – <a href="N4travelServicesSample.html">Sample</a> | <a href="#">Full Version</a></li>
+      <li>Travel Office Procedures – <a href="N4travelOfficeProceduresSample.html">Sample</a> | <a href="#">Full Version</a></li>
+    </ul>
+  </div>
+
+  <!-- Grade 10-12 Section -->
+  <button class="collapsible">Grade 10-12</button>
+  <div class="content">
+    <ul>
+      <li>Tourist Destinations – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+      <li>Travel Services – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+      <li>Travel Office Procedures – <a href="#">Sample</a> | <a href="#">Full Version</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="service" id="university">
+      <h2><i class="fas fa-university"></i> University Study Packs</h2>
+      <p>Content coming soon for multiple courses and modules.....</p>
+    </div>
+
+    <div class="service" id="web">
+      <h2><i class="fas fa-laptop-code"></i> Web Development</h2>
+      <p>We create responsive, user-friendly, and modern websites for individuals and businesses. Explore our creative portfolio to see what we’ve built so far. Your website dreams start here!</p>
+    </div>
+  </section>
+
+<section id="vacancies">
+  <h1><i class="fas fa-briefcase"></i> Internship</h1>
+  <p>Stay updated with the latest opportunities to gain real-world experience.</p>
+
+  <div class="vacancy-listing">
+    <h3>N6 Tourism In-service Training – Johannesburg</h3>
+    <p><strong>Company:</strong> SA Tours</p>
+    <p><strong>Deadline:</strong> 25 July 2025</p>
+    <button class="collapsible" onclick="window.open('https://www.tourism.gov.za/Careers/Pages/Internships.aspx')">Click here to apply</button>
+  </div>
+
+  <div class="vacancy-listing">
+    <h3>N6 Business Management In-service Training – Krugersdorp</h3>
+    <p><strong>Company:</strong> Mogale city Municipality</p>
+    <p><strong>Deadline:</strong> 27 July 2025</p>
+    <button class="collapsible" onclick="window.open('https:https://www.google.com/search?q=business+management+internships&oq=business+management+intership&gs_lcrp=EgZjaHJvbWUqCQgBEAAYChiABDIGCAAQRRg5MgkIARAAGAoYgAQyCQgCEAAYChiABDIJCAMQABgKGIAEMgkIBBAAGAoYgAQyCQgFEAAYChiABDIJCAYQABgKGIAEMgkIBxAAGAoYgAQyCQgIEAAYChiABDIJCAkQABgKGIAE0gEKMTE3MjdqMWoxNagCCLACAfEFk7gvlTKpUPA&sourceid=chrome&ie=UTF-8&jbr=sep:0#vhid=vt%3D20/docid%3DBxyS1odkg3gRbQnWAAAAAA%3D%3D&vssid=jobs-detail-viewer')">Click here to apply</button>
+  </div>
+
+  <div class="vacancy-listing">
+    <h3>Law – Cape Town</h3>
+    <p><strong>Company:</strong> CCMA & Labour Advice</p>
+    <p><strong>Deadline:</strong> 30 July 2025</p>
+    <button class="collapsible" onclick="window.open('https://www.tourism.gov.za/Careers/Pages/Internships.aspx')">Click here to apply</button>
+  </div>
+</section>
+
+
+<section id="contact">
+  <h1>Contact Us</h1>
+
+ <div class="icons">
+  <p><a href="https://wa.me/27810707048" target="_blank" rel="noopener">
+    <i class="fab fa-whatsapp"></i> WhatsApp: 081 070 7048</a>
+  </p>
+
+  <p><a href="tel:+27672184269">
+    <i class="fas fa-phone"></i> Call: 067 218 4269</a>
+  </p>
+
+  <p><a href="mailto:kaysdigitalcreations05@gmail.com" target="_blank" rel="noopener">
+    <i class="fas fa-envelope"></i> Email: kaysdigitalcreations05@gmail.com</a>
+  </p>
+
+  <p><a href="https://www.facebook.com/profile.php?id=61578210659978" target="_blank" rel="noopener">
+    <i class="fab fa-facebook"></i> Facebook: Kay's Digital Creations – KDC</a>
+  </p>
+</div>
+
+
+<h1>Leave Us Your Feedback</h1>
+<form id="feedbackForm" action="https://formspree.io/f/mnnznbeq" method="POST">
+  <label for="name">Your Name</label>
+  <input id="name" type="text" name="name" required />
+
+  <label for="college">College or School</label>
+  <input id="college" type="text" name="college" required />
+
+  <label for="email">Your Email</label>
+  <input id="email" type="email" name="email" required />
+
+  <label for="message">Your Message</label>
+  <textarea id="message" name="message" required></textarea>
+
+
+  <button type="submit">Submit</button>
+</form>
+<div id="feedbackResponse" style="margin-top: 10px;"></div>
+
+</section>
+
+
+
+<footer>
+  <p>&copy; 2025 Kay's Digital Creations (KDC)</p> 
+  <p><em>Building Digital Dreams</em></p>
+  
+<div class="footer-icons">
+  <a href="https://wa.me/27810707048" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="tel:+27672184269" aria-label="Phone">
+    <i class="fas fa-phone"></i>
+  </a>
+  <a href="mailto:kaysdigitalcreations05@gmail.com" target="_blank" rel="noopener" aria-label="Email">
+    <i class="fas fa-envelope"></i> 
+  </a>
+  <a href="https://www.facebook.com/profile.php?id=61578210659978" target="_blank" rel="noopener" aria-label="Facebook">
+    <i class="fab fa-facebook"></i>
+  </a>
+</div>
+
+</footer>
+
+
+  <script>
+
+  // Collapsible logic for N4/N5/N6 buttons
+  const collapsibles = document.querySelectorAll(".collapsible");
+
+  collapsibles.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      this.classList.toggle("active");
+      const content = this.nextElementSibling;
+      if (content && content.style.display === "block") {
+        content.style.display = "none";
+      } else if (content) {
+        content.style.display = "block";
+      }
+    });
+  });
+
+document.getElementById("feedbackForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const name = form.querySelector("#name").value.trim();
+  const feedbackResponse = document.getElementById("feedbackResponse");
+  feedbackResponse.innerText = ""; // Clear previous messages
+
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: "POST",
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  })
+  .then(response => {
+    if (response.ok) {
+      feedbackResponse.style.color = "green";
+      feedbackResponse.innerText = `Thank you ${name}, your message has been received! We will contact you shortly.`;
+      form.reset();
+      // Don’t hide the form if message is inside it
+    } else {
+      response.json().then(data => {
+        feedbackResponse.style.color = "red";
+        if (data.errors) {
+          feedbackResponse.innerText = data.errors.map(error => error.message).join(", ");
+        } else {
+          feedbackResponse.innerText = "Oops! Something went wrong. Please try again.";
+        }
+      });
+    }
+  })
+  .catch(() => {
+    feedbackResponse.style.color = "red";
+    feedbackResponse.innerText = "Network error. Please try again later.";
+  });
+});
+
+
+
+
+      // Mobile menu toggle logic
+  const toggleBtn = document.getElementById("mobile-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  if (toggleBtn && navLinks) {
+    toggleBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  }
+
+  // Close nav menu when a link is clicked (optional but nice for UX)
+  document.querySelectorAll('.nav-links li a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (navLinks.classList.contains('show')) {
+        navLinks.classList.remove('show');
+      }
+    });
+  });
+
+  function filterServices(searchTerm) {
+  // Normalize search term to lowercase for case-insensitive matching
+  const filter = searchTerm.toLowerCase().trim();
+
+  // Select all course-section elements inside #services
+  const courseSections = document.querySelectorAll('#services .course-section');
+
+  courseSections.forEach(section => {
+    // Get the text content of the whole section (course title and contents)
+    const text = section.textContent.toLowerCase();
+
+    // Check if the search term exists in this course section text
+    if (text.includes(filter)) {
+      section.style.display = ''; // Show matching course
+    } else {
+      section.style.display = 'none'; // Hide non-matching course
+    }
+  });
+}
+
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

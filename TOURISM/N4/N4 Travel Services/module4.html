@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Module 4 – Booking Procedures & Travel Documents | N4 Travel Services</title>
+  <style>
+    * { box-sizing: border-box; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; }
+    body { background: #f8fafd; color: #333; line-height: 1.6; }
+
+    .main-header {
+      background: linear-gradient(to right, #004466, #006688);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 5px solid #003344;
+    }
+
+    .main-header img {
+      display: block;
+      margin: 0 auto 1rem;
+      border-radius: 10px;
+    }
+
+    .main-header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .main-header p {
+      margin: 0.3rem 0;
+      font-weight: bold;
+    }
+
+    nav button {
+      background: #fff;
+      color: #004466;
+      border: 2px solid #004466;
+      padding: 0.6rem 1.2rem;
+      margin-top: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background: #004466;
+      color: #fff;
+    }
+
+    .content-container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #004466;
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style: disc inside;
+      margin-top: 0.5rem;
+    }
+
+    .bottom-nav {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .bottom-nav button {
+      background: #006688;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      margin: 0.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .bottom-nav button:hover {
+      background: #004466;
+    }
+
+    footer {
+      background: #003344;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+<header class="main-header">
+  <img src="images/logo.jpg" height="150" width="150" alt="Logo" />
+  <h1>Module 4: Reservations</h1>
+  <p><strong>Part of the N4 Travel Services Study Pack</strong></p>
+  <p><strong>Developed by Karabo Bopape</strong></p>
+  <nav>
+    <button onclick="location.href='module3.html'">← Back to Module 3</button>
+  </nav>
+</header>
+
+<main class="content-container">
+  <section>
+  <h2>Unit 1: IATA City, Airport, and Airline Codes</h2>
+
+  <ul>
+    <li><strong>1.1 Code and Decode Cities, Airports, and Airlines</strong></li>
+    <p>
+      The International Air Transport Association (IATA) assigns unique three-letter codes to cities and airports worldwide to simplify communication and reservation systems in the travel industry. Similarly, airlines have unique two-character codes used for identification in booking and ticketing.
+    </p>
+    <p>
+      Examples of important IATA codes include:
+    </p>
+
+    <div style="overflow-x:auto; margin-top:1rem;">
+      <table style="width:100%; max-width:700px; margin:auto; border-collapse:collapse; background:#fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 10px; overflow:hidden;">
+        <thead style="background-color:#004466; color:#fff;">
+          <tr>
+            <th style="padding:12px; text-align:left;">Type</th>
+            <th style="padding:12px; text-align:left;">Name</th>
+            <th style="padding:12px; text-align:left;">Code</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #ddd;">
+            <td style="padding:10px;">City</td>
+            <td style="padding:10px;">Johannesburg</td>
+            <td style="padding:10px;">JNB</td>
+          </tr>
+          <tr style="background:#f1f7fb; border-bottom:1px solid #ddd;">
+            <td style="padding:10px;">Airport</td>
+            <td style="padding:10px;">OR Tambo International Airport</td>
+            <td style="padding:10px;">JNB</td>
+          </tr>
+          <tr style="border-bottom:1px solid #ddd;">
+            <td style="padding:10px;">City</td>
+            <td style="padding:10px;">Cape Town</td>
+            <td style="padding:10px;">CPT</td>
+          </tr>
+          <tr style="background:#f1f7fb; border-bottom:1px solid #ddd;">
+            <td style="padding:10px;">Airport</td>
+            <td style="padding:10px;">Cape Town International Airport</td>
+            <td style="padding:10px;">CPT</td>
+          </tr>
+          <tr style="border-bottom:1px solid #ddd;">
+            <td style="padding:10px;">Airline</td>
+            <td style="padding:10px;">South African Airways</td>
+            <td style="padding:10px;">SA</td>
+          </tr>
+          <tr style="background:#f1f7fb;">
+            <td style="padding:10px;">Airline</td>
+            <td style="padding:10px;">British Airways</td>
+            <td style="padding:10px;">BA</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:1rem;">
+      Understanding and correctly using these codes is essential in making accurate travel reservations, ticketing, and flight information management.
+    </p>
+  </ul>
+
+    <h3 style="margin-top:1.5rem; color:#006688;">📘 Exam Tip</h3>
+    <p>
+      Memorize common IATA city, airport, and airline codes, especially those relevant to South Africa and major international destinations. Be able to identify codes from names and vice versa. Exam questions may include matching codes with the correct airport, city, or airline, or decoding booking references.
+    </p>
+  </section>
+
+
+
+    <section>
+  <h2>Unit 2: Travel Manuals</h2>
+  <p>
+    2.1 Code and decode city, airport, and airline codes using official manuals and references. Travel manuals such as the IATA Airline Coding Directory provide detailed lists of standardized codes essential for reservations and ticketing.
+  </p>
+  
+  <h3>2.2 Reading and Interpreting Information from Travel Manuals</h3>
+  <ul>
+    <li><strong>2.2.1 Government Gazette of South Africa (GSA):</strong> The GSA publishes official regulations and notices relating to travel, transport, and tourism that consultants need to understand and interpret.</li>
+    
+    <li><strong>2.2.2 Domestic and International Flight Timetables:</strong> These manuals provide schedules for flights, including departure and arrival times, airlines operating routes, and seasonal changes.</li>
+    
+    <li><strong>2.2.3 National Accommodation Association of South Africa (NAA-SA):</strong> A manual containing details on accredited accommodation providers, useful for making reservations and advising clients.</li>
+    
+    <li><strong>2.2.4 Rail Transport Manuals:</strong> Include schedules, routes, and tariffs for national and regional rail services, important for integrated travel planning.</li>
+    
+    <li><strong>2.2.5 Motor Coach Travel Manuals:</strong> Contain information on coach operators, routes, stops, and ticketing procedures for road travel.</li>
+  </ul>
+
+  <h3 style="margin-top:1.5rem; color:#006688;">📘 Exam Tip</h3>
+  <p>
+    Be able to identify key travel manuals and their purpose. Practice reading flight timetables and accommodation directories. Understand how to interpret and extract relevant information from these sources to assist in reservation processes.
+  </p>
+</section>
+
+<section>
+  <h2>Unit 3: Minimum Connecting Time (MCT)</h2>
+  
+  <h3>3.1 Meanings of Terms Relating to MCT</h3>
+  <ul>
+    <li><strong>3.1.1 Online:</strong> Flights operated by the same airline or within the same airline alliance, where connection times are usually shorter due to coordinated scheduling.</li>
+    <li><strong>3.1.2 Interline:</strong> Flights operated by different airlines that have agreements to handle passenger transfers and baggage connections.</li>
+    <li><strong>3.1.3 Dom-Dom (Domestic to Domestic):</strong> Connecting flights within the same country.</li>
+    <li><strong>3.1.4 Dom-Int or Int-Dom (Domestic to International or vice versa):</strong> Connecting flights between domestic and international terminals.</li>
+    <li><strong>3.1.5 Int-Int (International to International):</strong> Connecting flights between international terminals or airports.</li>
+  </ul>
+
+  <h3>3.2 Using Terms to Determine MCT at Airports Using the Official Airline Guide (OAG)</h3>
+  <p>
+    The Official Airline Guide (OAG) provides published minimum connecting times for different airports based on the flight types and terminals involved. Travel consultants use this to advise passengers on sufficient transfer time to avoid missed connections.
+  </p>
+
+  <h3 style="margin-top:1.5rem; color:#006688;">📘 Exam Tip</h3>
+  <p>
+    Understand the definitions and differences between terms like online, interline, Dom-Dom, and Int-Int. Be able to apply these when calculating minimum connecting times from provided timetables or guides such as the OAG. Exam questions may include scenario-based problems on transfer planning.
+  </p>
+</section>
+
+<section>
+  <h2>Unit 4: Fares Quotations</h2>
+
+  <!-- Fare Calculator -->
+  <div id="fare-calculator" style="max-width:400px; background:#e6f0f8; padding:1rem; border-radius:10px; margin-bottom:1.5rem;">
+    <h3>Fare Calculator</h3>
+    <form id="calculator-form">
+      <label for="distance">Distance (km):</label><br>
+      <input type="number" id="distance" min="0" required placeholder="Enter distance in km" style="width:100%; padding:0.5rem; margin-bottom:1rem;"><br>
+
+      <label for="fare-per-km">Fare per km (ZAR):</label><br>
+      <input type="number" id="fare-per-km" min="0" step="0.01" required placeholder="Enter fare rate per km" style="width:100%; padding:0.5rem; margin-bottom:1rem;"><br>
+
+      <label for="tax">Tax Percentage (%):</label><br>
+      <input type="number" id="tax" min="0" max="100" step="0.01" placeholder="Enter tax percentage" style="width:100%; padding:0.5rem; margin-bottom:1rem;" value="15"><br>
+
+      <button type="submit" style="background:#004466; color:#fff; padding:0.6rem 1.2rem; border:none; border-radius:6px; cursor:pointer;">Calculate Fare</button>
+    </form>
+
+    <div id="result" style="margin-top:1rem; font-weight:bold; font-size:1.1rem;"></div>
+  </div>
+
+
+
+  
+  <p><strong>4.1 Calculating and Quoting Fares</strong></p>
+  <ul>
+    <li>
+      <strong>4.1.1 Domestic Flights and Journeys:</strong>  
+      For domestic travel within South Africa, fares are generally calculated based on distance and a fixed rate per kilometer. Additional costs include VAT, airport taxes, and sometimes service fees. Students should understand how to:
+      <ul>
+        <li>Identify fare zones or distance brackets</li>
+        <li>Apply correct rates per kilometer (e.g., R1.50/km)</li>
+        <li>Calculate total cost: <code>Total Fare = Base Fare + VAT + Tax</code></li>
+      </ul>
+      Example: A flight from Johannesburg to Durban (600 km) at R1.50/km = R900 base fare + 15% VAT = R1,035 total.
+    </li>
+
+    <li>
+      <strong>4.1.2 Regional Flights and Journeys:</strong>  
+      These involve travel between South Africa and neighboring countries (e.g., Namibia, Botswana, Zimbabwe). Calculations follow similar methods but may include:
+      <ul>
+        <li>International departure tax</li>
+        <li>Currency exchange rate impacts</li>
+        <li>Possible interline agreements for connecting flights</li>
+      </ul>
+      Example: Johannesburg to Gaborone (Botswana) flight – 300 km × R1.80/km + international tax (R200) + fuel surcharge.
+    </li>
+  </ul>
+
+  <p><strong>4.2 Recommending a Fare and/or Booking Class Based on a Fare Table, the Rules, and a Client Profile:</strong></p>
+  <p>
+    Travel consultants must analyze fare tables to recommend the most suitable booking class (e.g., Economy, Business, First) and fare type (refundable, non-refundable, flexible). Factors include:
+    <ul>
+      <li>Travel dates and times</li>
+      <li>Flexibility of the passenger</li>
+      <li>Advance booking requirements</li>
+      <li>Stopovers or connections</li>
+    </ul>
+    Using this information, the consultant can balance affordability and flexibility to meet the client’s needs.
+  </p>
+
+  <h3 style="color:#006688;">📘 Exam Tip</h3>
+  <p>
+    Practice calculating fares using both distance and rate charts. Know how to apply VAT and taxes correctly. Be prepared to read fare tables and offer advice on booking classes based on a client profile. Expect exam questions that involve both fare calculation and client scenario analysis.
+  </p>
+</section>
+
+
+<section>
+  <h2>Unit 5: General Rules on Reservations</h2>
+
+  <p><strong>5.1 IATA Recommendations in the Code of Reservation Ethics</strong></p>
+  <ul>
+    <li>
+      <strong>5.1.1 Booking Space:</strong>  
+      Travel agents must ensure that bookings made are genuine and based on a client’s confirmed intent to travel. Agents must avoid making duplicate or speculative bookings that may block availability for other travelers. Accurate passenger details and itinerary must be recorded at the time of booking.
+    </li>
+    <li>
+      <strong>5.1.2 Cancelling Space:</strong>  
+      When a passenger cancels or changes their travel plans, the agent is responsible for immediately cancelling the reservation to free the seat for other passengers. Delayed cancellation may result in penalties or loss of reputation with the airline.
+    </li>
+    <li>
+      <strong>5.1.3 Responsibility of Travel Agents:</strong>  
+      Agents are expected to act ethically by providing correct information, avoiding false reservations, and following standard procedures. They are responsible for keeping clients informed about changes, requirements, and fare conditions.
+    </li>
+  </ul>
+
+  <p><strong>5.2 Rule 1–8 of IATA Resolution 830d (Reservation Procedures):</strong></p>
+  <p>
+    These are global procedures outlined by IATA for consistent and ethical booking practices. The rules include: using proper names, avoiding dummy bookings, advising clients of ticketing time limits, recording contact details correctly, and ensuring prompt cancellation of unused space. Failure to follow these rules can lead to financial penalties or loss of agency accreditation.
+  </p>
+
+  <p><strong>5.3 Applying the Rules and Recommendations:</strong></p>
+  <p>
+    Travel consultants must apply IATA’s rules and ethical recommendations in their daily work. They should ensure compliance with airline systems, avoid overbooking, and always communicate clearly with clients. Maintaining professionalism in all bookings helps build client trust and avoids unnecessary complications.
+  </p>
+
+  <h3 style="color:#006688;">📘 Exam Tip</h3>
+  <p>
+    Memorize key IATA reservation rules and ethical guidelines. Focus on how agents must handle booking, cancellation, and changes. Be able to apply these rules in client-based scenarios. For exams, you may be asked to identify ethical breaches or suggest the correct procedure in a real-world travel booking situation.
+  </p>
+</section>
+
+
+    <section>
+  <h2>Unit 6: How to Make a Reservation</h2>
+
+  <p><strong>6.1 Making a Telephone Reservation:</strong></p>
+  <p>
+    When making a telephone reservation, travel consultants must follow a professional and structured approach:
+    <ul>
+      <li>Greet the client politely and identify yourself and your agency.</li>
+      <li>Gather all necessary travel details: full names (as per ID/passport), destination, travel dates, preferred airline/class, and any special needs (e.g., wheelchair access or meal preferences).</li>
+      <li>Repeat the details back to confirm accuracy.</li>
+      <li>Confirm availability and provide options for flights, fares, and booking classes.</li>
+      <li>Advise the client of ticketing time limits and any applicable conditions (e.g., refund policies, visa requirements).</li>
+      <li>Record all booking details clearly and ensure client contact details are captured accurately.</li>
+    </ul>
+    Communication should be clear, courteous, and efficient.
+  </p>
+
+  <p><strong>6.2 Giving a Written Account of a Telephone Reservation:</strong></p>
+  <p>
+    After making a reservation by phone, it is important to document the conversation in writing. This includes:
+    <ul>
+      <li>Client’s name and contact information</li>
+      <li>Flight details (airline, flight number, date, time, route)</li>
+      <li>Fare quoted and booking class</li>
+      <li>Special requests or notes (e.g., seat preference, meal choice)</li>
+      <li>Reservation reference number (PNR) and ticketing deadline</li>
+    </ul>
+    The written summary should be professional, dated, and filed or sent to the client as confirmation.
+  </p>
+
+  <h3 style="color:#006688;">📘 Exam Tip</h3>
+  <p>
+    Know the full step-by-step process of making a telephone reservation and how to summarise it clearly in writing. You may be asked in exams to write a sample telephone booking log or identify missing information from a booking scenario. Accuracy, clarity, and professionalism are key!
+  </p>
+</section>
+
+<section>
+  <h2>Unit 7: Documentation</h2>
+
+  <p><strong>7.1 Selecting Transport, Accommodation, and Tours, and Completing a Client File</strong></p>
+  <p>
+    Travel consultants must select appropriate travel services that match the client’s preferences, needs, and budget. This includes:
+    <ul>
+      <li>Transport: Choosing air, rail, coach, or car hire based on routes, fares, and travel times.</li>
+      <li>Accommodation: Matching client preferences with star rating, location, and amenities.</li>
+      <li>Tours: Selecting suitable guided tours or excursions based on interests and available time.</li>
+    </ul>
+    A completed client file must contain:
+    <ul>
+      <li>Client’s personal details (name, ID/passport, contact info)</li>
+      <li>Confirmed itinerary (dates, times, and providers)</li>
+      <li>Payment and invoicing records</li>
+      <li>Travel insurance details (if applicable)</li>
+      <li>All required documents – vouchers, tickets, confirmations</li>
+    </ul>
+  </p>
+
+  <p><strong>7.2 Completing Booking Documents</strong></p>
+
+  <ul>
+    <li>
+      <strong>7.2.1 Hotel Voucher (Domestic Booking):</strong>  
+      A hotel voucher is a document provided to the client and presented at the accommodation. It should include:
+      <ul>
+        <li>Guest name(s)</li>
+        <li>Hotel name, address, and contact number</li>
+        <li>Check-in and check-out dates</li>
+        <li>Room type and meal plan (e.g., B&B, half-board)</li>
+        <li>Booking reference number</li>
+        <li>Payment details (e.g., pre-paid, pay at hotel)</li>
+        <li>Special notes (e.g., early check-in, late checkout)</li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Booking Files:</strong>  
+      A booking file is the central record of all travel arrangements. It must be completed accurately and updated regularly. The file includes:
+      <ul>
+        <li>Client profile</li>
+        <li>Flight and transport bookings</li>
+        <li>Accommodation reservations</li>
+        <li>Tour or activity bookings</li>
+        <li>Copies of all communication with client and service providers</li>
+        <li>Confirmation numbers and payment records</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3 style="color:#006688;">📘 Exam Tip</h3>
+  <p>
+    Be familiar with the structure and content of both a hotel voucher and a full booking file. In exams, you may be asked to complete or correct a client booking document. Practice identifying missing or incorrect information in typical booking forms and understand what a complete client file should look like.
+  </p>
+</section>
+
+
+
+    
+<section>
+  <h2>Module Summary: Reservations</h2>
+  <p>
+    In this module, students learn the critical processes and documentation involved in travel reservations. Unit 1 introduces students to essential IATA city, airport, and airline codes, which are foundational to understanding booking systems. Unit 2 focuses on interpreting various travel manuals, such as flight timetables and accommodation directories, while Unit 3 explores Minimum Connecting Time (MCT), enabling students to accurately calculate layover times between flights. Unit 4 equips students with the knowledge and skills to calculate domestic and regional fares, recommend appropriate fare classes, and apply real client profiles to fare tables. Unit 5 outlines the general rules on reservations, emphasizing IATA's Code of Ethics and Resolution 830d, which ensure professional conduct and client satisfaction. Unit 6 teaches students how to effectively conduct and document telephone reservations, and Unit 7 ties it all together by detailing how to complete client files, hotel vouchers, and booking forms. Mastery of these units ensures a full understanding of reservation procedures, documentation standards, and industry compliance.
+  </p>
+
+  <h3 style="color:#006688;">📘 Exam Tip</h3>
+  <p>
+    Be prepared to decode and use IATA codes, calculate fares, and apply booking rules in client scenarios. You may be required to complete or correct booking forms, identify errors, or respond to real-life travel scenarios in exam questions. Focus on the ethics of booking, proper documentation, and how to apply the rules practically.
+  </p>
+</section>
+
+   
+<script>
+  document.getElementById('calculator-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Get input values
+    const distance = parseFloat(document.getElementById('distance').value);
+    const farePerKm = parseFloat(document.getElementById('fare-per-km').value);
+    const taxPercent = parseFloat(document.getElementById('tax').value) || 0;
+
+    // Validate inputs
+    if (isNaN(distance) || isNaN(farePerKm) || distance <= 0 || farePerKm <= 0) {
+      document.getElementById('result').textContent = 'Please enter valid positive numbers for distance and fare per km.';
+      return;
+    }
+
+    // Calculate base fare
+    const baseFare = distance * farePerKm;
+
+    // Calculate tax amount
+    const taxAmount = (baseFare * taxPercent) / 100;
+
+    // Calculate total fare
+    const totalFare = baseFare + taxAmount;
+
+    // Display results
+    document.getElementById('result').textContent =
+      `Base Fare: ZAR ${baseFare.toFixed(2)} | Tax (${taxPercent}%): ZAR ${taxAmount.toFixed(2)} | Total Fare: ZAR ${totalFare.toFixed(2)}`;
+  });
+</script>
+
+
+
+
+    <div class="bottom-nav">
+      <button onclick="location.href='quiz4.html'">Take Quiz for Module 4</button>
+      <button onclick="location.href='test4.html'">Take Test 4</button>
+      <button onclick="location.href='exam.html'">Take Final Exam</button>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 N4 Travel Services | Developed by Karabo Bopape
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz 1 – Travel Services | Module 1</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #f4faff;
+      padding: 2rem;
+      color: #333;
+    }
+
+    .quiz-container {
+      max-width: 800px;
+      background: white;
+      margin: auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #004466;
+      margin-bottom: 1.5rem;
+    }
+
+    .question {
+      margin-bottom: 1.5rem;
+    }
+
+    .question h3 {
+      color: #006699;
+      margin-bottom: 0.5rem;
+    }
+
+    .options label {
+      display: block;
+      margin: 0.4rem 0;
+      cursor: pointer;
+    }
+
+    button {
+      background-color: #006699;
+      color: white;
+      padding: 0.7rem 1.4rem;
+      border: none;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+      display: block;
+      margin: 2rem auto 0;
+    }
+
+    button:hover {
+      background-color: #004466;
+    }
+
+    .result {
+      text-align: center;
+      margin-top: 2rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz 1 – Module 1: Travel Industry</h1>
+
+    <form id="quizForm">
+      <div class="question">
+        <h3>1. What is a principal in the travel industry?</h3>
+        <div class="options">
+          <label><input type="radio" name="q1" value="a"> A person who gives travel lectures</label>
+          <label><input type="radio" name="q1" value="b"> A supplier like an airline or hotel</label>
+          <label><input type="radio" name="q1" value="c"> The owner of a travel agency</label>
+          <label><input type="radio" name="q1" value="d"> A passenger on a tour</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>2. What is the main role of a tour operator?</h3>
+        <div class="options">
+          <label><input type="radio" name="q2" value="a"> Booking taxis for clients</label>
+          <label><input type="radio" name="q2" value="b"> Providing legal advice</label>
+          <label><input type="radio" name="q2" value="c"> Creating and selling travel packages</label>
+          <label><input type="radio" name="q2" value="d"> Managing airport operations</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>3. What does IATA stand for?</h3>
+        <div class="options">
+          <label><input type="radio" name="q3" value="a"> International Association of Tourism Agencies</label>
+          <label><input type="radio" name="q3" value="b"> International Air Transport Association</label>
+          <label><input type="radio" name="q3" value="c"> International African Travel Alliance</label>
+          <label><input type="radio" name="q3" value="d"> Intercontinental Airlines and Travel Agencies</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>4. Which one is a support service in tourism?</h3>
+        <div class="options">
+          <label><input type="radio" name="q4" value="a"> Tour operator</label>
+          <label><input type="radio" name="q4" value="b"> Hotel</label>
+          <label><input type="radio" name="q4" value="c"> Travel insurance company</label>
+          <label><input type="radio" name="q4" value="d"> Airline</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>5. What does a travel consultant typically do?</h3>
+        <div class="options">
+          <label><input type="radio" name="q5" value="a"> Fix airline equipment</label>
+          <label><input type="radio" name="q5" value="b"> Serve food on a plane</label>
+          <label><input type="radio" name="q5" value="c"> Plan and assist with travel bookings</label>
+          <label><input type="radio" name="q5" value="d"> Build hotels</label>
+        </div>
+      </div>
+
+      <button type="submit">Submit Answers</button>
+    </form>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script>
+    document.getElementById("quizForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const answers = {
+        q1: "b",
+        q2: "c",
+        q3: "b",
+        q4: "c",
+        q5: "c"
+      };
+
+      let score = 0;
+      let total = 5;
+
+      for (let i = 1; i <= total; i++) {
+        let q = document.querySelector(`input[name="q${i}"]:checked`);
+        if (q && q.value === answers[`q${i}`]) {
+          score++;
+        }
+      }
+
+      document.getElementById("result").textContent = `You scored ${score} out of ${total}`;
+    });
+  </script>
+</body>
+</html>

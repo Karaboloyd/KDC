@@ -1,0 +1,150 @@
+/* ===== Global Reset & Base Styling ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* ===== Container Wrapper ===== */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ===== Header Styles ===== */
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1a73e8;
+}
+
+/* ===== Button Styles ===== */
+.btn {
+  display: inline-block;
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #155ab6;
+}
+
+/* ===== Navigation Buttons ===== */
+.nav-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* ===== Question Section ===== */
+.question {
+  margin-bottom: 25px;
+}
+
+.question p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.question label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* ===== Timer Style ===== */
+.timer {
+  text-align: right;
+  font-weight: bold;
+  color: #d9534f;
+  margin-bottom: 15px;
+}
+
+/* ===== Results Styling ===== */
+.result {
+  background-color: #e9f7ef;
+  padding: 20px;
+  margin-top: 20px;
+  border-left: 6px solid #28a745;
+  border-radius: 8px;
+}
+
+/* ===== Answer Feedback ===== */
+.correct {
+  color: #28a745;
+}
+
+.incorrect {
+  color: #dc3545;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* ===== Images (e.g. maps) ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+/* ===== Page Cover (index.html) ===== */
+.cover {
+  background: linear-gradient(135deg, #1a73e8, #00c6ff);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cover h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.cover p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+/* ===== Link Styling ===== */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button{
+  width: 100px;
+  height: 50px;
+}
